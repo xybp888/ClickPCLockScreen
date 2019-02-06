@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B40BE28220B927E00A7E002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B40BE27220B927E00A7E002 /* Foundation.framework */; };
+		3B40BE33220B927E00A7E002 /* ClickPCLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B40BE32220B927E00A7E002 /* ClickPCLockScreen.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B40BE24220B927E00A7E002 /* ClickPCLockScreen.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ClickPCLockScreen.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B40BE27220B927E00A7E002 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B40BE2C220B927E00A7E002 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		3B40BE2D220B927E00A7E002 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		3B40BE2F220B927E00A7E002 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		3B40BE30220B927E00A7E002 /* ClickPCLockScreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClickPCLockScreen-Prefix.pch"; sourceTree = "<group>"; };
+		3B40BE31220B927E00A7E002 /* ClickPCLockScreen.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ClickPCLockScreen.xm; sourceTree = "<group>"; };
+		3B40BE32220B927E00A7E002 /* ClickPCLockScreen.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ClickPCLockScreen.mm; sourceTree = "<group>"; };
+		3B40BE37220B927E00A7E002 /* ClickPCLockScreen.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ClickPCLockScreen.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/ClickPCLockScreen.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B40BE20220B927E00A7E002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40BE28220B927E00A7E002 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B40BE19220B927E00A7E002 = {
+			isa = PBXGroup;
+			children = (
+				3B40BE29220B927E00A7E002 /* ClickPCLockScreen */,
+				3B40BE26220B927E00A7E002 /* Frameworks */,
+				3B40BE25220B927E00A7E002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B40BE25220B927E00A7E002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE24220B927E00A7E002 /* ClickPCLockScreen.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B40BE26220B927E00A7E002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE27220B927E00A7E002 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B40BE29220B927E00A7E002 /* ClickPCLockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE31220B927E00A7E002 /* ClickPCLockScreen.xm */,
+				3B40BE32220B927E00A7E002 /* ClickPCLockScreen.mm */,
+				3B40BE2A220B927E00A7E002 /* Package */,
+				3B40BE2E220B927E00A7E002 /* Supporting Files */,
+			);
+			path = ClickPCLockScreen;
+			sourceTree = "<group>";
+		};
+		3B40BE2A220B927E00A7E002 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE2B220B927E00A7E002 /* DEBIAN */,
+				3B40BE34220B927E00A7E002 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		3B40BE2B220B927E00A7E002 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE2C220B927E00A7E002 /* control.txt */,
+				3B40BE2D220B927E00A7E002 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		3B40BE2E220B927E00A7E002 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE2F220B927E00A7E002 /* PackageVersion.plist */,
+				3B40BE30220B927E00A7E002 /* ClickPCLockScreen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B40BE34220B927E00A7E002 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE35220B927E00A7E002 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		3B40BE35220B927E00A7E002 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE36220B927E00A7E002 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		3B40BE36220B927E00A7E002 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				3B40BE37220B927E00A7E002 /* ClickPCLockScreen.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B40BE21220B927E00A7E002 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B40BE23220B927E00A7E002 /* ClickPCLockScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B40BE3A220B927E00A7E002 /* Build configuration list for PBXNativeTarget "ClickPCLockScreen" */;
+			buildPhases = (
+				3B40BE1E220B927E00A7E002 /* ShellScript */,
+				3B40BE1F220B927E00A7E002 /* Sources */,
+				3B40BE20220B927E00A7E002 /* Frameworks */,
+				3B40BE21220B927E00A7E002 /* Headers */,
+				3B40BE22220B927E00A7E002 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickPCLockScreen;
+			productName = ClickPCLockScreen;
+			productReference = 3B40BE24220B927E00A7E002 /* ClickPCLockScreen.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B40BE1A220B927E00A7E002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					3B40BE23220B927E00A7E002 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B40BE1D220B927E00A7E002 /* Build configuration list for PBXProject "ClickPCLockScreen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B40BE19220B927E00A7E002;
+			productRefGroup = 3B40BE25220B927E00A7E002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B40BE23220B927E00A7E002 /* ClickPCLockScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B40BE1E220B927E00A7E002 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		3B40BE22220B927E00A7E002 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B40BE1F220B927E00A7E002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40BE33220B927E00A7E002 /* ClickPCLockScreen.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B40BE38220B927E00A7E002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		3B40BE39220B927E00A7E002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		3B40BE3B220B927E00A7E002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickPCLockScreen/ClickPCLockScreen-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		3B40BE3C220B927E00A7E002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClickPCLockScreen/ClickPCLockScreen-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B40BE1D220B927E00A7E002 /* Build configuration list for PBXProject "ClickPCLockScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B40BE38220B927E00A7E002 /* Debug */,
+				3B40BE39220B927E00A7E002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B40BE3A220B927E00A7E002 /* Build configuration list for PBXNativeTarget "ClickPCLockScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B40BE3B220B927E00A7E002 /* Debug */,
+				3B40BE3C220B927E00A7E002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B40BE1A220B927E00A7E002 /* Project object */;
+}
