@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B40BE28220B927E00A7E002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B40BE27220B927E00A7E002 /* Foundation.framework */; };
 		3B40BE33220B927E00A7E002 /* ClickPCLockScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B40BE32220B927E00A7E002 /* ClickPCLockScreen.mm */; };
+		3B40BE3E220B92E700A7E002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B40BE3D220B92E700A7E002 /* UIKit.framework */; };
+		3B40BE40220B92F700A7E002 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B40BE3F220B92F700A7E002 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +20,11 @@
 		3B40BE2D220B927E00A7E002 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		3B40BE2F220B927E00A7E002 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		3B40BE30220B927E00A7E002 /* ClickPCLockScreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClickPCLockScreen-Prefix.pch"; sourceTree = "<group>"; };
-		3B40BE31220B927E00A7E002 /* ClickPCLockScreen.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ClickPCLockScreen.xm; sourceTree = "<group>"; };
+		3B40BE31220B927E00A7E002 /* ClickPCLockScreen.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ClickPCLockScreen.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3B40BE32220B927E00A7E002 /* ClickPCLockScreen.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ClickPCLockScreen.mm; sourceTree = "<group>"; };
 		3B40BE37220B927E00A7E002 /* ClickPCLockScreen.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ClickPCLockScreen.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/ClickPCLockScreen.plist; sourceTree = "<group>"; };
+		3B40BE3D220B92E700A7E002 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3B40BE3F220B92F700A7E002 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B40BE40220B92F700A7E002 /* libsubstrate.dylib in Frameworks */,
+				3B40BE3E220B92E700A7E002 /* UIKit.framework in Frameworks */,
 				3B40BE28220B927E00A7E002 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +61,8 @@
 		3B40BE26220B927E00A7E002 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B40BE3F220B92F700A7E002 /* libsubstrate.dylib */,
+				3B40BE3D220B92E700A7E002 /* UIKit.framework */,
 				3B40BE27220B927E00A7E002 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -296,10 +304,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickPCLockScreen/ClickPCLockScreen-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.10.23;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -317,10 +330,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickPCLockScreen/ClickPCLockScreen-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.10.23;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
